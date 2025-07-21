@@ -1,7 +1,5 @@
 import { useState, useRef, useEffect } from "react";
 import "./App.css";
-import SendIcon from '@mui/icons-material/Send';
-import { Button } from '@mui/material';
 import axios from "axios";
 import ReactMarkdown from "react-markdown";
 
