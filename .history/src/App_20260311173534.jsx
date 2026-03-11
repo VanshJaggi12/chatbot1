@@ -118,7 +118,7 @@ function App() {
             <div className="message-row bot">
 
               <div className="typing">
-                chatbot is thinking...
+                c is thinking...
               </div>
 
             </div>

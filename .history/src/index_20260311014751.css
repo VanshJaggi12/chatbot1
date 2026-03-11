@@ -1,0 +1,28 @@
+/* src/index.css */
+:root {
+  --bg-gradient: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  --font-main: 'Inter', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background: var(--bg-gradient);
+  font-family: var(--font-main);
+  color: #f8fafc;
+}
+
+#root {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}

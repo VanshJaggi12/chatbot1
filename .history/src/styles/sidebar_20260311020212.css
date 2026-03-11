@@ -1,0 +1,45 @@
+.sidebar{
+  width:260px;
+  background:#202123;
+  padding:15px;
+  display:flex;
+  flex-direction:column;
+}
+
+.sidebar-title{
+  font-size:20px;
+  font-weight:600;
+  margin-bottom:20px;
+}
+
+.new-chat-btn{
+  padding:10px;
+  border:none;
+  background:#444654;
+  color:white;
+  cursor:pointer;
+  border-radius:6px;
+  margin-bottom:15px;
+}
+
+.new-chat-btn:hover{
+  background:#555869;
+}
+
+.chat-list{
+  flex:1;
+  overflow-y:auto;
+}
+
+.chat-item{
+  padding:10px;
+  border-radius:6px;
+  margin-bottom:8px;
+  cursor:pointer;
+  background:#343541;
+  transition:0.2s;
+}
+
+.chat-item:hover{
+  background:#444654;
+}

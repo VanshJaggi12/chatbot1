@@ -28,6 +28,7 @@ function App() {
     const currentQuestion = question;
 
     setQuestion("");
+
     setGeneratingAnswer(true);
 
     setChatHistory(prev => [
@@ -56,12 +57,9 @@ function App() {
 
       const data = await response.json();
 
-      console.log("Gemini response:", data);
-
       const aiResponse =
-        data?.candidates?.[0]?.content?.parts
-          ?.map((part) => part.text)
-          .join("") || "No response from Gemini.";
+        data.candidates?.[0]?.content?.parts?.[0]?.text ||
+        "No response from Gemini.";
 
       setChatHistory(prev => [
         ...prev,
@@ -118,7 +116,7 @@ function App() {
             <div className="message-row bot">
 
               <div className="typing">
-                chatbot is thinking...
+                Gemini is thinking...
               </div>
 
             </div>
